@@ -149,20 +149,20 @@ fetch('./Data/info.json')
     const pfList = document.getElementById('portfolio-list');
     for (let i in data['portfolio']) {
       const portfolio = `
-      <div class="portfolio-item shadow-sm p-4 d-flex flex-column justify-content-around">
-        <div class="port-name d-flex w-100 justify-content-center gap-2 mb-3">
+      <div class="portfolio-item shadow-sm p-4 d-flex flex-column justify-content-around mb-4">
+        <div class="port-name d-flex w-100 justify-content-center gap-2">
           ${data['portfolio'][i]['icon']}
           <h4 class="app-name">${data['portfolio'][i]['name']}</h4>
         </div>
       <p class="app-desc">
         ${data['portfolio'][i]['desc']}
       </p>
-      <div><a
-      class="app-link p-2"
-      href="${data['portfolio'][i]['link']}"
-      ><i class="fa-solid fa-up-right-from-square"></i>
-      <span class="app-text">github.com</span></a
-    ></div> 
+      <div>
+        <a class="app-link p-2" href="${data['portfolio'][i]['link']}">
+          <i class="fa-solid fa-up-right-from-square"></i>
+          <span class="app-text">github.com</span>
+        </a>
+      </div> 
       </div>`;
       pfList.insertAdjacentHTML('beforeend', portfolio);
     }
