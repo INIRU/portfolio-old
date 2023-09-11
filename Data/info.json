@@ -24,12 +24,12 @@
     {
       "year": 2021,
       "title": "6th Annual National High School Club Software Competition",
-      "experi": "2021 was a year of firsts for me, as I took on my first intramural competition to test my skills. I won first place by developing <span class='inline bold'>Math Rain!</span> in <span class='inline'>Python PyQt5</span> with the motif of acid rain from the old Hancom tutoring program. <br /><br />However, I wanted to make a mobile app to solve the inconvenience of my daily life, not a computer program, and I wanted to make it public. At that time, my teacher gave me a flyer for the national high school club program presentation, and I developed a <a herf='https://github.com/INIRU/Nofy/tree/main' class='inline bold'>Nofy</a> using subway station <span class='inline bold'>WiFi BSSID</span> as a project leader, and I presented it to my high school club friends across the country and received a lot of praise. My 2021 was an important year for me to develop my capabilities and collaboration in team projects."
+      "experi": "In 2021, I took on the challenge of an on-campus program exhibition to test my abilities. I created <span class='inline bold'>Math Rain!</span> in <span class='inline'>Python PyQt5</span> with the motif of <span class='inline'>acid rain</span> from the old <span class='inline'>Hancomta Nature Learning</span> program and received many praises.<br/><br/>However, I wanted to make a mobile app to solve the inconvenience of my daily life, not a computer program, and I wanted to make it public. At that time, my teacher gave me a flyer for the national high school club program presentation, and I developed a <span class='inline bold'>Nofy</span> using subway station <span class='inline'>WiFi BSSID</span> as a project leader, and I presented it to my high school club friends across the country and received a lot of praise. 2021 was an important year for me to develop my capabilities and collaboration in team projects."
     },
     {
       "year": 2022,
       "title": "Program maintenance and a heart for teaching juniors",
-      "experi": "When 2022 came around, I was most excited to see how many juniors would join our club. In fact, more juniors came to our club than I expected, and my teacher asked me if I would teach my knowledge to the juniors every Friday. I worked hard because I wanted to gain experience in teaching someone and because I think teaching someone is the best way to remember and learn, and it paid off. <br/><br/>However, I didn't neglect my own development. I upgraded the <a herf='https://github.com/INIRU/Nofy/tree/main' class='inline bold'>Nofy</a> I developed last year, improved the UI and performance, and presented it at the Korean Code Fair."
+      "experi": "When 2022 came around, I was very excited to see how many juniors would join our club. In fact, more juniors came to our club than I expected, and my teacher asked me if I would teach my knowledge to the juniors every Friday. I worked hard because I wanted to gain experience in teaching someone and because I think teaching someone is the best way to remember and learn, and it paid off.<br/><br/>However, I didn't neglect my own development. I upgraded the <span class='inline bold'>Nofy</span> I developed last year, improved the UI and performance, and presented it at the <span class='inline'>Korean Code Fair</span>."
     },
     {
       "year": 2023
@@ -81,7 +81,7 @@
     {
       "name": "Sneaky",
       "icon": "<img src='./src/INIRU.png' alt='Logo' class='app-icon'/>",
-      "desc": "It's a tug-of-war game made with Html, Css, and JS.",
+      "desc": "This is a person catching game made in Html, Css, and JavaScript.",
       "url": "https://github.com/INIRU/Sneaky/"
     }
   ]

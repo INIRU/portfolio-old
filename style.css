@@ -366,6 +366,11 @@ code {
   height: 120px;
 }
 
+.footer-name {
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
 @keyframes cursor {
   0% {
     opacity: 1;
