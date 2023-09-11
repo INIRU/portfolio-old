@@ -433,16 +433,16 @@ code {
   }
 
   .portfolio-item {
-    width: 390px;
-    height: 290px;
+    width: 310px;
+    height: 210px;
+  }
+
+  .port-name {
+    margin-top: 0px !important;
   }
 
   .app-name {
-    font-size: 28px;
-  }
-
-  .app-desc {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .app-link {
@@ -453,13 +453,19 @@ code {
     font-size: 18px;
   }
 
+  .app-link {
+    font-size: 13px;
+  }
+
   .app-desc {
     height: 65px;
+    font-size: 13px;
+    margin-bottom: 0px !important;
   }
 
   .app-icon {
-    width: 48px;
-    height: 48px;
+    width: 38px;
+    height: 38px;
   }
 }
 
