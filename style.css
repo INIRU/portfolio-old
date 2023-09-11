@@ -1,0 +1,596 @@
+:root[color-theme='light'] {
+  --navbar-bg: #e5e5e5;
+  --text-color: #000000;
+  --text-hover: #6f6e6e;
+  --body-bg: #f0f0f0;
+
+  /** code color*/
+  --color-white: #767676;
+  --color-purple: #8261ec;
+  --color-yellow: #455cf1;
+  --color--blue: #66aaf2;
+  --color-semi: #5cabb3;
+  --cursor-color: #2c2c2e;
+  --soical-color: #66aaf2;
+  --html-tag-color: #ec6073;
+  --html-lt-color: #5cabb3;
+  --skill-bg-color: #ffffff;
+  --overlay-color: rgba(255, 255, 255, 0.3);
+  --level-color: rgba(0, 0, 0, 0.7);
+  --inline-bg: #d9d9d9;
+  --app-link: rgb(237, 245, 254);
+  --app-link-text: rgb(43, 102, 202);
+  --a-link-text: rgb(0, 108, 231);
+}
+
+:root[color-theme='dark'] {
+  --navbar-bg: #2c2c2e;
+  --text-color: #ffffff;
+  --text-hover: #cbcbcb;
+  --body-bg: #2d2f32;
+
+  /** code color*/
+  --color-white: #ffffff;
+  --color-purple: #c04f8a;
+  --color-yellow: #e0b859;
+  --color--blue: #5183b7;
+  --color-semi: #9cdafa;
+  --cursor-color: #ffffff;
+  --soical-color: #5183b7;
+  --html-tag-color: #cf5d5a;
+  --html-lt-color: #ffffff;
+  --skill-bg-color: #383939;
+  --overlay-color: rgba(0, 0, 0, 0.3);
+  --level-color: rgba(255, 255, 255, 0.7);
+  --inline-bg: #454545;
+  --app-link: rgb(183, 213, 247);
+  --app-link-text: rgb(43, 102, 202);
+  --a-link-text: rgb(0, 168, 252);
+}
+
+p,
+h2 {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--a-link-text);
+}
+
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+}
+
+.color-white {
+  color: var(--color-white);
+}
+
+.color-purple {
+  color: var(--color-purple);
+}
+
+.color-yellow {
+  color: var(--color-yellow);
+}
+
+.color-semi {
+  color: var(--color-semi);
+}
+
+.color-blue {
+  color: var(--color--blue);
+}
+
+.color-red {
+  color: var(--html-tag-color);
+}
+
+.scroll {
+  width: 80px;
+  height: 80px;
+  background-color: var(--skill-bg-color);
+  border-radius: 50%;
+  font-size: 35px;
+}
+
+.scroll-controller {
+  right: 1%;
+  bottom: 2%;
+  z-index: 10;
+}
+
+.navbar {
+  background-color: var(--navbar-bg) !important;
+  color: var(--text-color) !important;
+}
+
+.navbar-brand {
+  color: inherit;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+}
+
+.navbar-brand:hover {
+  color: var(--text-hover);
+}
+
+.navbar-mode {
+  font-size: 20px;
+}
+
+.info-container {
+  width: 100%;
+  background-color: var(--navbar-bg);
+  height: 230px;
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+  font-weight: 800;
+  letter-spacing: -2px;
+  font-size: 32px;
+}
+
+.me {
+  font-family: 'Fira Code', 'Noto Sans KR', monospace;
+}
+
+.me::after {
+  content: '';
+  margin-left: 0.42rem;
+  border-right: 2px solid var(--cursor-color);
+  animation: 0.7s cursor infinite steps(1);
+}
+
+.info-field {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.info-image {
+  width: 300px;
+}
+
+.about-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.bar {
+  border-bottom: 2px solid var(--color--blue);
+  height: 15px;
+  width: 40px;
+}
+
+.about-text-container {
+  font-size: 20px;
+}
+
+.html-tag {
+  font-family: 'Fira Code', monospace;
+  letter-spacing: -3px;
+  color: var(--html-lt-color);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.skill-item {
+  width: 170px;
+  height: 170px;
+  background-color: var(--skill-bg-color);
+  border-radius: 15px;
+  transition: border 0.5s;
+  overflow: hidden;
+}
+
+.skill-item-icon {
+  width: 80px;
+  display: block;
+  margin: auto;
+}
+
+.badge-text {
+  letter-spacing: 0px;
+  font-weight: 600;
+  font-size: 23px;
+  color: var(--text-color);
+}
+
+.overlay {
+  height: 100%;
+  background-color: var(--overlay-color);
+  opacity: 0;
+  border-radius: inherit;
+  transition: all 0.5s;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.level {
+  font-size: 42px;
+  font-weight: 900;
+  color: var(--level-color);
+}
+
+.inline {
+  font-family: 'Fira Code', monospace;
+  border: none;
+  border-radius: 5px;
+  padding: 2.27px;
+  background-color: var(--inline-bg);
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.portfolio-item {
+  width: 400px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: var(--skill-bg-color);
+}
+
+.portfolio-list {
+  font-size: 40px;
+}
+
+.app-name {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 0px;
+  font-size: 32px;
+  color: var(--text-color);
+  margin: 0px;
+  align-self: center;
+}
+
+.app-desc {
+  letter-spacing: 0px;
+  font-size: 15px;
+  color: var(--text-color);
+}
+
+.app-link {
+  font-size: 20px;
+  background-color: var(--app-link);
+  color: var(--app-link-text);
+  border-radius: 5px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.app-text {
+  font-size: 19px;
+  letter-spacing: -2px;
+}
+
+.app-desc {
+  height: 65px;
+}
+
+.app-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.nofy-icon {
+  color: rgb(114, 200, 114) !important;
+}
+
+.self-dia-icon {
+  color: rgb(227, 70, 45) !important;
+}
+
+.pp-icon {
+  color: rgb(98, 236, 251) !important;
+}
+
+.experi-year,
+.experi-bar-null {
+  width: 5%;
+  height: 100%;
+}
+
+.circle-container,
+.experi-bar-box {
+  width: 5%;
+  min-width: 35px;
+}
+
+.circle {
+  width: 50%;
+  background-color: #455cf1;
+  border-radius: 50%;
+}
+
+.circle::after {
+  display: block;
+  content: '';
+  padding-bottom: 100%;
+}
+
+.year {
+  font-size: 20px;
+}
+
+.experi-title,
+.experience {
+  width: 80%;
+}
+
+.experi-title h2 {
+  font-size: 25px;
+}
+.experi-bar {
+  border-left: 2px solid var(--text-color);
+  border-radius: 15%;
+}
+
+.experience {
+  font-size: 17px;
+}
+
+.footer-icon {
+  width: 42px;
+}
+
+.footer-social-item {
+  width: 70px;
+  height: 70px;
+  border-radius: 25%;
+  font-size: 32px;
+  background-color: var(--skill-bg-color);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.footer-social-item:hover {
+  width: 80px;
+  height: 80px;
+  font-size: 42px;
+}
+
+.footer-brand {
+  color: var(--color--blue) !important;
+}
+
+.footer-social-container {
+  height: 120px;
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 1200px / 992px / 768px / 576px */
+
+@media screen and (max-width: 1200px) {
+  .info-name {
+    font-size: 30px !important;
+  }
+
+  .info-text-container {
+    width: 70% !important;
+  }
+
+  .info-image-container {
+    width: 40% !important;
+  }
+
+  .info-image {
+    width: 250px !important;
+  }
+
+  .about-text-container {
+    font-size: 17px;
+  }
+
+  .about-title {
+    font-size: 35px;
+  }
+
+  .html-tag {
+    font-size: 35px;
+  }
+
+  .year {
+    font-size: 18px;
+  }
+
+  .experi-title h2 {
+    font-size: 23px;
+  }
+
+  .experience {
+    font-size: 15px;
+  }
+
+  .scroll {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+  }
+
+  .portfolio-item {
+    width: 390px;
+    height: 290px;
+  }
+
+  .app-name {
+    font-size: 28px;
+  }
+
+  .app-desc {
+    font-size: 14px;
+  }
+
+  .app-link {
+    font-size: 18px;
+  }
+
+  .app-text {
+    font-size: 18px;
+  }
+
+  .app-desc {
+    height: 65px;
+  }
+
+  .app-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info-name {
+    font-size: 25px !important;
+  }
+
+  .info-text-container {
+    width: 70% !important;
+  }
+
+  .info-image-container {
+    width: 30% !important;
+  }
+
+  .info-image {
+    width: 200px !important;
+  }
+
+  .about-text-container {
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .bar {
+    width: 90px;
+  }
+
+  .about-title {
+    font-size: 30px;
+  }
+
+  .html-tag {
+    font-size: 32px;
+  }
+
+  .year {
+    font-size: 17px;
+  }
+
+  .experi-title h2 {
+    font-size: 20px;
+  }
+
+  .experience {
+    font-size: 14px;
+  }
+
+  .scroll {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .info-name {
+    font-size: 25px !important;
+  }
+
+  .info-text-container {
+    width: 70% !important;
+  }
+
+  .info-image-container {
+    width: 30% !important;
+  }
+
+  .info-image {
+    width: 150px !important;
+  }
+
+  .about-text-container {
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .bar {
+    width: 90px;
+  }
+
+  .about-title {
+    font-size: 30px;
+  }
+
+  .html-tag {
+    font-size: 25px;
+  }
+
+  .experi-list-container {
+    padding: 5px;
+  }
+
+  .year {
+    font-size: 15px;
+  }
+
+  .experi-title h2 {
+    font-size: 17px;
+  }
+
+  .experience {
+    font-size: 13px;
+  }
+
+  .scroll {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+
+  .skill-item {
+    width: 155px;
+    height: 155px;
+  }
+
+  .skill-item-icon {
+    width: 60px;
+  }
+
+  .badge-text {
+    font-size: 18px;
+  }
+
+  .footer-social-item {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+  }
+
+  .footer-social-item:hover {
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+  }
+}

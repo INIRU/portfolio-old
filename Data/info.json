@@ -1,0 +1,88 @@
+{
+  "skills": [
+    { "name": "HTML", "id": "html5", "color": "#E34F26", "level": 100 },
+    { "name": "CSS", "id": "css3", "color": "#1572B6", "level": 100 },
+    {
+      "name": "JavaScript",
+      "id": "javascript",
+      "color": "#F7DF1E",
+      "level": 90
+    },
+    {
+      "name": "TypeScript",
+      "id": "typescript",
+      "color": "#3178C6",
+      "level": 30
+    },
+    { "name": "React", "id": "react", "color": "#61DAFB", "level": 50 },
+    { "name": "Node.Js", "id": "nodejs", "color": "#339933", "level": 80 },
+    { "name": "Vue.Js", "id": "vuejs", "color": "#4FC08D", "level": 30 },
+    { "name": "Python", "id": "python", "color": "#3776AB", "level": 100 },
+    { "name": "Git", "id": "git", "color": "#F05032", "level": 80 }
+  ],
+  "experience": [
+    {
+      "year": 2021,
+      "title": "6th Annual National High School Club Software Competition",
+      "experi": "2021 was a year of firsts for me, as I took on my first intramural competition to test my skills. I won first place by developing <span class='inline bold'>Math Rain!</span> in <span class='inline'>Python PyQt5</span> with the motif of acid rain from the old Hancom tutoring program. <br /><br />However, I wanted to make a mobile app to solve the inconvenience of my daily life, not a computer program, and I wanted to make it public. At that time, my teacher gave me a flyer for the national high school club program presentation, and I developed a <a herf='https://github.com/INIRU/Nofy/tree/main' class='inline bold'>Nofy</a> using subway station <span class='inline bold'>WiFi BSSID</span> as a project leader, and I presented it to my high school club friends across the country and received a lot of praise. My 2021 was an important year for me to develop my capabilities and collaboration in team projects."
+    },
+    {
+      "year": 2022,
+      "title": "Program maintenance and a heart for teaching juniors",
+      "experi": "When 2022 came around, I was most excited to see how many juniors would join our club. In fact, more juniors came to our club than I expected, and my teacher asked me if I would teach my knowledge to the juniors every Friday. I worked hard because I wanted to gain experience in teaching someone and because I think teaching someone is the best way to remember and learn, and it paid off. <br/><br/>However, I didn't neglect my own development. I upgraded the <a herf='https://github.com/INIRU/Nofy/tree/main' class='inline bold'>Nofy</a> I developed last year, improved the UI and performance, and presented it at the Korean Code Fair."
+    },
+    {
+      "year": 2023
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Nofy",
+      "icon": "<i class='fa-solid fa-train-subway nofy-icon'></i>",
+      "desc": "An app that recognises your WiFi BSSID and lets you know you've arrived without using the subway's timeline.",
+      "link": "https://github.com/INIRU/Nofy/"
+    },
+    {
+      "name": "Lena",
+      "icon": "<img src='https://cdn.discordapp.com/app-icons/686606116314152994/8db1944d5540f9db00b79f31eba626bd.png' alt='Logo' class='app-icon'/>",
+      "desc": "This chatbot has been used by over 2000 people in an app called Discord.",
+      "link": "https://github.com/INIRU/Discord-Lena-Bot/"
+    },
+    {
+      "name": "Auto Self-Dia",
+      "icon": "<i class='fa-solid fa-notes-medical self-dia-icon'></i>",
+      "desc": "An automated self-checker designed to eliminate the frustration of doing the same self-check every morning.",
+      "link": "https://github.com/INIRU/Auto-Self-Diagnosis/"
+    },
+    {
+      "name": "PingPongWR",
+      "icon": "<i class='fa-regular fa-comment pp-icon'></i>",
+      "desc": "A Python module that makes it easy to use PingPongBuilder's API.",
+      "link": "https://github.com/INIRU/PingPongWr/"
+    },
+    {
+      "name": "Teshin Bot",
+      "icon": "<img src='https://static.wikia.nocookie.net/warframe/images/7/7f/Teshin.png' alt='Logo' class='app-icon'/>",
+      "desc": "We implemented the Teshin shop item rotation for a game called Warframe as a Discord bot using the API.",
+      "link": "https://github.com/INIRU/Discord-Teshin-Bot/"
+    },
+    {
+      "name": "LOL_PW",
+      "icon": "",
+      "desc": "A prog that uses Riot's LCU API to automatically populate lines in League of Legends.",
+      "url": "https://github.com/INIRU/LOL_PW/"
+    },
+    {
+      "name": "Azite Bot",
+      "icon": "",
+      "desc": "This is an automation bot developed for the convenience of the Discord <span class='inline'>Azite Valorant</span> server.",
+      "url": "https://github.com/INIRU/Azite-Bot-2/"
+    },
+    {
+      "name": "Sneaky",
+      "icon": "<img src='./src/INIRU.png' alt='Logo' class='app-icon'/>",
+      "desc": "It's a tug-of-war game made with Html, Css, and JS.",
+      "url": "https://github.com/INIRU/Sneaky/"
+    }
+  ]
+}
