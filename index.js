@@ -150,7 +150,7 @@ fetch('./Data/info.json')
     for (let i in data['portfolio']) {
       const portfolio = `
       <div class="portfolio-item shadow-sm p-4 d-flex flex-column justify-content-around mb-4">
-        <div class="port-name d-flex w-100 justify-content-center gap-2">
+        <div class="port-name d-flex w-100 justify-content-center gap-2 mb-4">
           ${data['portfolio'][i]['icon']}
           <h4 class="app-name">${data['portfolio'][i]['name']}</h4>
         </div>
