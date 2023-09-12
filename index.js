@@ -215,21 +215,23 @@ document.getElementById('contect').addEventListener('click', function () {
 });
 
 document
-  .querySelector('.ar-container')
+  .querySelector('.info-image-flexbox')
   .addEventListener('mouseover', function () {
     document.querySelector('.ar-icon').style.opacity = 1;
     document.querySelector('.info-image').src = './src/INIRU.gif';
   });
 
 document
-  .querySelector('.ar-container')
+  .querySelector('.info-image-flexbox')
   .addEventListener('mouseout', function () {
     document.querySelector('.ar-icon').style.opacity = 0;
     document.querySelector('.info-image').src = './src/INIRU.png';
   });
 
-document.querySelector('.ar-container').addEventListener('click', function () {
-  const ar = `
+document
+  .querySelector('.info-image-flexbox')
+  .addEventListener('click', function () {
+    const ar = `
     <div class="ar-camera w-100 h-100 z-2">
     <div class="position-fixed p-3 z-3">
       <i class="fa-solid fa-x ar-close"></i>
@@ -252,8 +254,8 @@ document.querySelector('.ar-container').addEventListener('click', function () {
     </a-scene>
     </div>
   `;
-  document.body.insertAdjacentHTML('beforebegin', ar);
-  document.querySelector('.ar-close').addEventListener('click', function () {
-    document.querySelector('.ar-camera').remove();
+    document.body.insertAdjacentHTML('beforebegin', ar);
+    document.querySelector('.ar-close').addEventListener('click', function () {
+      document.querySelector('.ar-camera').remove();
+    });
   });
-});
