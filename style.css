@@ -21,6 +21,7 @@
   --app-link: rgb(237, 245, 254);
   --app-link-text: rgb(43, 102, 202);
   --a-link-text: rgb(0, 108, 231);
+  --ar-color: rgba(0, 0, 0, 0.7);
 }
 
 :root[color-theme='dark'] {
@@ -46,6 +47,7 @@
   --app-link: rgb(183, 213, 247);
   --app-link-text: rgb(43, 102, 202);
   --a-link-text: rgb(0, 168, 252);
+  --ar-color: rgba(0, 0, 0, 0.7);
 }
 
 p,
@@ -101,7 +103,7 @@ body {
 .scroll-controller {
   right: 1%;
   bottom: 2%;
-  z-index: 10;
+  z-index: 1;
 }
 
 .navbar {
@@ -153,8 +155,32 @@ code {
   color: var(--text-color);
 }
 
-.info-image {
+.info-image-flexbox {
   width: 300px;
+  height: 300px;
+}
+
+.ar-icon {
+  color: var(--ar-color);
+  font-size: 100px;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.ar-camera {
+  position: fixed;
+  font-size: 32px;
+  color: white;
+}
+
+.ar-container {
+  width: inherit !important;
+  height: inherit !important;
+}
+
+.info-image {
+  width: inherit !important;
+  height: inherit !important;
 }
 
 .about-title {
@@ -398,8 +424,9 @@ code {
     width: 40% !important;
   }
 
-  .info-image {
+  .info-image-flexbox {
     width: 250px !important;
+    height: 250px !important;
   }
 
   .about-text-container {
@@ -482,8 +509,9 @@ code {
     width: 30% !important;
   }
 
-  .info-image {
+  .info-image-flexbox {
     width: 200px !important;
+    height: 200px !important;
   }
 
   .about-text-container {
@@ -536,8 +564,9 @@ code {
     width: 30% !important;
   }
 
-  .info-image {
+  .info-image-flexbox {
     width: 150px !important;
+    height: 150px !important;
   }
 
   .about-text-container {

@@ -4,6 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-face.prod.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-face-aframe.prod.js"></script>
     <link rel="icon" href="./src/INIRU.gif" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -84,11 +87,18 @@
           <div
             class="info-image-container position-relative w-100 h-100 d-flex justify-content-end"
           >
-            <img
-              class="info-image position-absolute bottom-0 z-0"
-              src="./src/INIRU.png"
-              alt=""
-            />
+            <div class="info-image-flexbox">
+              <div
+                class="ar-container position-absolute z-1 d-flex justify-content-center align-items-center w-100 h-100 bottom-0"
+              >
+                <i class="ar-icon fa-solid fa-expand"></i>
+              </div>
+              <img
+                class="info-image position-absolute bottom-0 z-0"
+                src="./src/INIRU.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
