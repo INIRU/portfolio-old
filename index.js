@@ -233,7 +233,7 @@ document
   .addEventListener('click', function () {
     const ar = `
     <div class="ar-camera w-100 h-100">
-    <div class="position-fixed p-3 z-3">
+    <div class="position-fixed p-3 z-3 w-100 h-100">
       <i class="fa-solid fa-x ar-close"></i>
     </div>
     <a-scene
@@ -242,7 +242,7 @@ document
       vr-mode-ui="enable: false"
       device-orientation-permission-ui="enabled: false"
     >
-      <a-camera active="false" position="0 0 0" vr-mode-ui="enabled: false"></a-camera>
+      <a-camera active="false" position="0 0 0"></a-camera>
       <a-entity mindar-face-target="anchorIndex: 168">
         <a-gltf-model
           rotation="0 90 90"
