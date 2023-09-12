@@ -20,10 +20,4 @@ document.addEventListener('DOMContentLoaded', function () {
   switchCameraButton.addEventListener('click', () => {
     arSystem.switchCamera();
   });
-  shttuerButton.addEventListener('click', () => {
-    const canvas = document.querySelector('.a-canvas');
-    const photoBox = (document.querySelector(
-      '.ar-image'
-    ).style.backgroundImage = `url('${canvas.toDataURL()}')`);
-  });
 });
