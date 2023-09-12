@@ -30,6 +30,40 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="ar-camera-container w-100 h-100 z-2">
+      <div
+        class="position-fixed z-3 w-100 h-100 d-flex justify-content-center align-items-end"
+      >
+        <div
+          class="ar-content-bar p-5 w-100 bg-black d-flex justify-content-between align-items-center"
+        >
+          <i class="fa-solid fa-x ar-close"></i>
+          <i class="fa-solid fa-camera-rotate ar-switch"></i>
+        </div>
+      </div>
+      <div class="ar-camera w-100 h-100">
+        <a-scene
+          mindar-face="autoStart: false"
+          embedded
+          color-space="sRGB"
+          renderer="colorManagement: true, physicallyCorrectLights"
+          vr-mode-ui="enabled: false"
+          device-orientation-permission-ui="enabled: false"
+        >
+          <a-camera
+            active="false"
+            position="0 0 0"
+            look-controls="false"
+          ></a-camera>
+          <a-assets>
+            <img id="INIRU" src="./src/INIRU.gif" preload />
+          </a-assets>
+          <a-entity mindar-face-target="anchorIndex: 168">
+            <a-plane material="src: #INIRU;" scale="1.2 1.2 1.2"></a-plane>
+          </a-entity>
+        </a-scene>
+      </div>
+    </div>
     <div class="scroll-controller position-fixed d-flex flex-column gap-3">
       <div
         class="scroll shadow-sm d-flex justify-content-center align-items-center visually-hidden"
@@ -222,5 +256,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="index.js"></script>
+    <script src="ar.js"></script>
   </body>
 </html>

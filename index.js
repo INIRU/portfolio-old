@@ -227,37 +227,3 @@ document
     document.querySelector('.ar-icon').style.opacity = 0;
     document.querySelector('.info-image').src = './src/INIRU.png';
   });
-
-document
-  .querySelector('.info-image-flexbox')
-  .addEventListener('click', function () {
-    const ar = `
-    <div class="ar-camera w-100 h-100">
-    <div class="position-fixed p-3 z-3 w-100 h-100">
-      <i class="fa-solid fa-x ar-close"></i>
-    </div>
-    <a-scene
-      mindar-face
-      embedded
-      vr-mode-ui="enable: false"
-      device-orientation-permission-ui="enabled: false"
-    >
-      <a-camera active="false" position="0 0 0"></a-camera>
-      <a-entity mindar-face-target="anchorIndex: 168">
-        <a-gltf-model
-          rotation="0 90 90"
-          position="0 0 0.1"
-          scale="0.07 0.07 0.07"
-          src="./src/INIRU.gltf"
-        ></a-gltf-model>
-      </a-entity>
-    </a-scene>
-    </div>
-  `;
-    document.body.insertAdjacentHTML('beforebegin', ar);
-    document.querySelector('.ar-camera').style.zIndex = 2;
-    document.querySelector('.ar-close').addEventListener('click', function () {
-      document.querySelector('.ar-camera').style.zIndex = -1;
-      document.querySelector('.ar-camera').remove();
-    });
-  });

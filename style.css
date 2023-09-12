@@ -167,11 +167,16 @@ code {
   opacity: 0;
 }
 
-.ar-camera {
+.ar-camera-container {
   position: fixed;
-  font-size: 32px;
+  font-size: 50px;
   color: white;
-  z-index: -1;
+  visibility: hidden;
+  background-color: black;
+}
+
+.ar-content-bar {
+  height: 15%;
 }
 
 .ar-container {
