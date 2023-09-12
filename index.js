@@ -242,7 +242,7 @@ document
       vr-mode-ui="enable: false"
       device-orientation-permission-ui="enabled: false"
     >
-      <a-camera active="false" position="0 0 0"></a-camera>
+      <a-camera active="false" position="0 0 0" vr-mode-ui="enabled: false"></a-camera>
       <a-entity mindar-face-target="anchorIndex: 168">
         <a-gltf-model
           rotation="0 90 90"
