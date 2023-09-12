@@ -171,6 +171,7 @@ code {
   position: fixed;
   font-size: 32px;
   color: white;
+  z-index: -1;
 }
 
 .ar-container {

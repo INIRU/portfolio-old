@@ -232,7 +232,7 @@ document
   .querySelector('.info-image-flexbox')
   .addEventListener('click', function () {
     const ar = `
-    <div class="ar-camera w-100 h-100 z-2">
+    <div class="ar-camera w-100 h-100">
     <div class="position-fixed p-3 z-3">
       <i class="fa-solid fa-x ar-close"></i>
     </div>
@@ -255,7 +255,9 @@ document
     </div>
   `;
     document.body.insertAdjacentHTML('beforebegin', ar);
+    document.querySelector('.ar-camera').style.zIndex = 2;
     document.querySelector('.ar-close').addEventListener('click', function () {
+      document.querySelector('.ar-camera').style.zIndex = -1;
       document.querySelector('.ar-camera').remove();
     });
   });
