@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const startButton = document.querySelector('.info-image-flexbox');
   const stopButton = document.querySelector('.ar-close');
   const switchCameraButton = document.querySelector('.ar-switch');
-  const shttuerButton = document.querySelector('.shttuer');
   startButton.addEventListener('click', async () => {
     document.querySelector('.ar-camera-container').style.visibility = 'visible';
     arSystem.start();
