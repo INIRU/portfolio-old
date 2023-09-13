@@ -29,7 +29,6 @@ window.addEventListener(
   async () => {
     let { pageYOffset } = window;
     if (pageYOffset >= 300) {
-      console.log(navbar.style.position == 'absolute');
       if (getComputedStyle(navbar).position == 'absolute') {
         navbar.style.transform = 'translateY(-56px)';
         navbar.style.zIndex = '2';
