@@ -48,6 +48,7 @@ window.addEventListener(
         navbar.style.transform = 'translateY(-56px)';
         navbar.style.zIndex = '2';
         await wait(100);
+        navbar.style.zIndex = '1';
         navbar.style.transform = 'translateY(0px)';
         navbar.style.position = 'absolute';
         navbar.style.transition = 'none';
