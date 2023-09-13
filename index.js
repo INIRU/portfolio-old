@@ -28,13 +28,14 @@ window.addEventListener(
   'scroll',
   async () => {
     let { pageYOffset } = window;
-    if (pageYOffset >= 100) {
-      navbar.style.zIndex = '2';
-      if (navbar.style.position == 'absolute') {
+    if (pageYOffset >= 300) {
+      console.log(navbar.style.position == 'absolute');
+      if (getComputedStyle(navbar).position == 'absolute') {
         navbar.style.transform = 'translateY(-56px)';
-        await wait(300);
-        navbar.style.transition = 'all 0.3s';
+        navbar.style.zIndex = '2';
+        await wait(100);
         navbar.style.position = 'fixed';
+        navbar.style.transition = 'all 0.3s';
       }
       if (pageYOffset > lastScrollTop) {
         navbar.style.transform = 'translateY(-56px)';
@@ -43,10 +44,14 @@ window.addEventListener(
       }
       lastScrollTop = pageYOffset <= 0 ? 0 : pageYOffset;
     } else {
-      navbar.style.transform = 'translateY(0px)';
-      navbar.style.zIndex = '1';
-      navbar.style.transition = 'none';
-      navbar.style.position = 'absolute';
+      if (getComputedStyle(navbar).position == 'fixed') {
+        navbar.style.transform = 'translateY(-56px)';
+        navbar.style.zIndex = '2';
+        await wait(100);
+        navbar.style.transform = 'translateY(0px)';
+        navbar.style.position = 'absolute';
+        navbar.style.transition = 'none';
+      }
     }
   },
   { passive: true }

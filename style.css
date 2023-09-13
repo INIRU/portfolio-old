@@ -113,7 +113,7 @@ body {
 .navbar {
   background-color: var(--navbar-bg) !important;
   color: var(--text-color) !important;
-  position: fixed;
+  position: absolute;
   transition: none;
 }
 
