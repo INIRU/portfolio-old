@@ -31,9 +31,9 @@ window.addEventListener(
     if (pageYOffset >= 100) {
       if (navbar.style.position == 'absolute') {
         navbar.style.transform = 'translateY(-56px)';
+        navbar.style.zIndex = '2';
         await wait(300);
         navbar.style.transition = 'all 0.3s';
-        navbar.style.zIndex = '3';
         navbar.style.position = 'fixed';
       }
       if (pageYOffset > lastScrollTop) {
