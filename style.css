@@ -106,9 +106,15 @@ body {
   z-index: 1;
 }
 
+.navbar-container {
+  height: 56px;
+}
+
 .navbar {
   background-color: var(--navbar-bg) !important;
   color: var(--text-color) !important;
+  position: fixed;
+  transition: none;
 }
 
 .navbar-brand {

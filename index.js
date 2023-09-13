@@ -19,6 +19,39 @@ document.getElementById('mode').addEventListener('click', function () {
   }
 });
 
+/** navbar animation */
+
+const navbar = document.querySelector('.navbar');
+let lastScrollTop = 0;
+
+window.addEventListener(
+  'scroll',
+  async () => {
+    let { pageYOffset } = window;
+    if (pageYOffset >= 100) {
+      if (navbar.style.position == 'absolute') {
+        navbar.style.transform = 'translateY(-56px)';
+        await wait(300);
+        navbar.style.transition = 'all 0.3s';
+        navbar.style.zIndex = '3';
+        navbar.style.position = 'fixed';
+      }
+      if (pageYOffset > lastScrollTop) {
+        navbar.style.transform = 'translateY(-56px)';
+      } else if (pageYOffset < lastScrollTop) {
+        navbar.style.transform = 'translateY(0px)';
+      }
+      lastScrollTop = pageYOffset <= 0 ? 0 : pageYOffset;
+    } else {
+      navbar.style.transform = 'translateY(0px)';
+      navbar.style.zIndex = '1';
+      navbar.style.transition = 'none';
+      navbar.style.position = 'absolute';
+    }
+  },
+  { passive: true }
+);
+
 /**Scroll Events */
 $(window).on('scroll', function () {
   let htSt = document.querySelector('html').scrollTop;
