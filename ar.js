@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const switchCameraButton = document.querySelector('.ar-switch');
   sceneEl.addEventListener('arError', (event) => {
     document.querySelector('.ar-camera-container').style.visibility = 'hidden';
-    arSystem.stop();
     alert('Camera Not Connected.');
+    window.location.reload();
   });
   startButton.addEventListener('click', async () => {
     document.querySelector('.ar-camera-container').style.visibility = 'visible';
