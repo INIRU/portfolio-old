@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const startButton = document.querySelector('.info-image-flexbox');
   const stopButton = document.querySelector('.ar-close');
   const switchCameraButton = document.querySelector('.ar-switch');
+  sceneEl.addEventListener('arError', (event) => {
+    document.querySelector('.ar-camera-container').style.visibility = 'hidden';
+    arSystem.stop();
+    alert('Camera Not Connected.');
+  });
   startButton.addEventListener('click', async () => {
     document.querySelector('.ar-camera-container').style.visibility = 'visible';
     arSystem.start();
